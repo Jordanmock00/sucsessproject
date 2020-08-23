@@ -1,0 +1,46 @@
+#HW = hours worked
+
+
+
+class week:
+    def __init__(self, mon, tue, wed, thu, fri, sat, sun):
+       self.mon = mon
+       self.tue = tue
+       self.wed = wed
+       self.thu = thu
+       self.fri = fri
+       self.sat = sat
+       self.sun = sun
+
+#probability of mastery
+# based of 35 total hours of potential study per week.
+hw1 = week(5, 0, 0, 5, 5, 5, 5) 
+hw2 = week(2, 5, 5, 0, 5, 3, 5) 
+hw3 = week(5, 1, 5, 5, 0, 5, 5)
+hw4 = week(0, 5, 1, 5, 0, 5, 5)
+fn1 = hw1.mon + hw1.tue + hw1.wed + hw1.thu + hw1.fri
+fn2 = hw2.mon + hw2.tue + hw2.wed + hw2.thu + hw2.fri
+fn3 = hw3.mon + hw3.tue + hw3.wed + hw3.thu + hw3.fri
+fn4 = hw4.mon + hw4.tue + hw4.wed + hw4.thu + hw4.fri
+month = fn1 + fn2 + fn3 + fn4
+est = 140 / month * 10  
+
+
+#probability of mastery
+# based of 35 total hours of potential study per week.
+hw5 = week(1, 0, 0, 5, 5, 5, 5) 
+hw6 = week(2, 5, 5, 0, 5, 3, 5) 
+hw7 = week(1, 1, 5, 5, 0, 5, 5)
+hw8 = week(5, 0, 0, 5, 5, 5, 5)
+fn5 = hw5.mon + hw5.tue + hw5.wed + hw5.thu + hw5.fri
+fn6 = hw6.mon + hw6.tue + hw6.wed + hw6.thu + hw6.fri
+fn7 = hw7.mon + hw7.tue + hw7.wed + hw7.thu + hw7.fri
+fn8 = hw8.mon + hw8.tue + hw8.wed + hw8.thu + hw8.fri
+month2 = fn5 + fn6 + fn7 + fn8
+est2 = 140 / month2 * 10 
+
+print("bob has a good study habbits score of ",est2,
+"% studying spanish language and",est,"% studying computer programming"
+)
+
+
